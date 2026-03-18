@@ -57,7 +57,7 @@ export class FooterComponent {
     this.enquiryForm.markAsUntouched();
   }
 
-  
+
   onPhoneInput(event: any): void {
     const input = event.target.value;
 
@@ -68,4 +68,12 @@ export class FooterComponent {
       emitEvent: false
     });
   }
+
+ scrollTop(){
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
 }

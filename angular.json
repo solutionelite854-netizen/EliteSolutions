@@ -26,6 +26,8 @@
                 "input": "public"
               },
               "src/assets",
+               "src/favicon.ico",
+               "src/CNAME",
               {
                 "glob": "_redirects",
                 "input": "./",
@@ -97,6 +99,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
